@@ -1,0 +1,22 @@
+<div class="modal fade" id="userPlanDlg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+    <div class="modal-content user-plan-dialog">
+    	<div class="modal-header">
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	    	<h1>You may be eligible for a subsidy</br>to help you pay for a marketplace health plan</h1>
+    	</div>
+    	<div class="modal-body">
+				<div>
+					<p>Based on your previous answers about household income, you may be eligible for a subsidy to help you pay for your health plan. These subsidies can only be applied to Silver tier plans.</p>
+				</div>
+				<div>
+					<p>Would you like to see these plans first?</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<%= link_to raw('<span>Yes</span>, show me Silver, subsidy-eligible plans first'), plans_index_path %>
+				<%= link_to raw('<span>No</span>, proceed to plans without pre-sorting'), '#' %>
+			</div>
+		</div>
+	</div>
+</div>

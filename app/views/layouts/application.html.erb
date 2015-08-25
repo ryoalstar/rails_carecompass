@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= full_title(yield(:title)) %></title>
+    <meta name="description" content="<%= full_title(yield(:title)) %>">
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js" %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+    <main role="main">
+      <%= render 'layouts/messages' %>
+      <div class="homepage-wrapper">
+        <%= render 'layouts/homepage_content' %>
+        <%= render 'layouts/homepage_footer' %>
+        <%= render 'layouts/footer' %>
+      </div>
+    </main>
+  </body>
+</html>
