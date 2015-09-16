@@ -85,6 +85,7 @@ Rails.application.configure do
     password: ENV['MANDRILL_APIKEY'] # Rails.application.secrets.email_provider_apikey
   }
   # ActionMailer Config
+  config.app_domain = ENV['DOMAIN_NAME']
   config.action_mailer.default_url_options = { :host => ENV['DOMAIN_NAME'] }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
